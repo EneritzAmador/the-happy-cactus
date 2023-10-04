@@ -6,7 +6,7 @@ const webpackCommon = require("./common.config");
 // webpack plugins
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const DefinePlugin = require("webpack/lib/DefinePlugin");
-const UglifyJsPlugin = require("fyjs-webpack-plugin");
+const UglifyJsPlugin = require("uglifyjs-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
