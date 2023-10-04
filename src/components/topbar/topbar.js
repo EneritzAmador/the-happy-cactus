@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import CuteCactus from "../../../static/assets/images/cutecactus.jpg";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons"; // Import the logout icon
 
 library.add(faSignOutAlt); // Import the logout icon
 
-export default class TopBar extends Component {  
+export default class TopBar extends Component { 
+  constructor() {
+    super();
+    this.logocactus = "https://images2.imgbox.com/82/6a/LkyvogaK_o.jpg";
+
+  } 
+
   render() {
     const { username, handleLogout } = this.props; // I destruct the properties (props) that are passed to the component. I extract username and handleLogout from the properties.
 
@@ -15,7 +20,7 @@ export default class TopBar extends Component {
       <div className="topbar">
         <div className="left">
           <div className="bar-image">
-            <img src={CuteCactus} alt="cactus logo" />
+            <img src={this.logocactus} alt="cactus logo" />
           </div>
           <h2>The Happy Cactus</h2>
         </div>

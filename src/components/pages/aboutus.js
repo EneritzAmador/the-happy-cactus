@@ -1,16 +1,16 @@
 import React, { Component } from "react";
-import image1 from "../../../static/assets/images/aboutusun.jpg";
-import image2 from "../../../static/assets/images/aboutusdos.jpg";
-import image3 from "../../../static/assets/images/aboutustres.jpg";
-import image4 from "../../../static/assets/images/aboutuscuatro.jpg";
-import image5 from "../../../static/assets/images/aboutuscinco.jpg";
-
 
 
 
 export default class AboutUs extends Component {
   constructor(props) {
     super(props);
+    const image1 = "https://images2.imgbox.com/5e/a9/ifv3wzVL_o.jpg";
+    const image2 = "https://images2.imgbox.com/da/5c/YDq59ZEo_o.jpg";
+    const image3 = "https://images2.imgbox.com/a9/a0/ki7Px17E_o.jpg";
+    const image4 = "https://images2.imgbox.com/70/7e/SH2YJZcH_o.jpg";
+    const image5 = "https://images2.imgbox.com/df/c6/YUS2o9CN_o.jpg";
+    
     this.state = {
       currentSlide: 0,
       images: [image1, image2, image3, image4, image5]
