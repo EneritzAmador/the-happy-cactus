@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import CuteCactus from "../../../static/assets/images/CuteCactus.jpg";
+import CuteCactus from "../../../static/assets/images/cutecactus.jpg";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSignOutAlt } from "@fortawesome/free-solid-svg-icons"; // Import the logout icon
