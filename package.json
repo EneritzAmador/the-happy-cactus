@@ -5,7 +5,7 @@
   "scripts": {
     "preinstall": "npm set audit false",
     "start": "webpack-dev-server --config webpack/dev.config.js --watch",
-    "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress --display-error-details --color",
+    "build": "cross-env NODE_ENV=production webpack --config webpack/prod.config.js --progress  --color",
     "heroku-postbuild": "npm run build",
     "precommit": "eslint src",
     "prod": "NODE_ENV=production node server.js"
@@ -88,7 +88,7 @@
     "babel-register": "^6.26.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "sass": "^1.68.0",
-    "sass-loader": "^10.1.1",
+    "sass-loader": "^8.0.0",
     "uglifyjs-webpack-plugin": "^1.2.7"
   }
 }
