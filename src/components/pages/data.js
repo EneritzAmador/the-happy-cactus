@@ -1,9 +1,9 @@
-import cactusone from "../../images/cactusone.jpg";
-import cactustwo from "../../images/cactustwo.jpg";
-import cactusthree from "../../images/cactusthree.jpg";
-import cactusfour from "../../images/cactusfour.jpg";
-import cactusfive from "../../images/cactusfive.jpg";
-import cactussix from "../../images/cactussix.jpg";
+import cactusone from "../../../static/assets/images/cactusone.jpg";
+import cactustwo from "../../../static/assets/images/cactustwo.jpg";
+import cactusthree from "../../../static/assets/images/cactusthree.jpg";
+import cactusfour from "../../../static/assets/images/cactusfour.jpg";
+import cactusfive from "../../../static/assets/images/cactusfive.jpg";
+import cactussix from "../../../static/assets/images/cactussix.jpg";
 
 //These data are used as a database of the Store's products.
 

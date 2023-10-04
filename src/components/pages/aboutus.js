@@ -1,9 +1,9 @@
 import React, { Component } from "react";
-import image1 from "../../images/aboutusun.jpg";
-import image2 from "../../images/aboutusdos.jpg";
-import image3 from "../../images/aboutustres.jpg";
-import image4 from "../../images/aboutuscuatro.jpg";
-import image5 from "../../images/aboutuscinco.jpg";
+import image1 from "../../../static/assets/images/aboutusun.jpg";
+import image2 from "../../../static/assets/images/aboutusdos.jpg";
+import image3 from "../../../static/assets/images/aboutustres.jpg";
+import image4 from "../../../static/assets/images/aboutuscuatro.jpg";
+import image5 from "../../../static/assets/images/aboutuscinco.jpg";
 
 
 
