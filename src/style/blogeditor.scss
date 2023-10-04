@@ -1,0 +1,54 @@
+.blog-editor-container {
+    height: 78vh;
+    font-family: 'Manrope', sans-serif;
+    background-color: $blanco;
+    padding: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  
+    .editor-title {
+      font-size: 1.5em; 
+      margin-bottom: 10px;
+      text-align: center;
+    }
+  
+    .editor-field {
+      margin-bottom: 10px; 
+      
+  
+      input, textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 1em;
+        margin-bottom: 5px;
+      }
+
+      textarea {
+        height: 250px;
+      }
+    }
+  
+    .editor-button {
+        padding: 15px 50px;
+        font-size: 1em;
+        background-color: $verdeclaro; 
+        color: $blanco; 
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.5s;
+        margin-top: 30px;
+      
+        &:hover {
+          background-color: $verdeoscuro; 
+        }
+      }
+
+      .button-editor {
+        display: flex;
+        justify-content: center;
+      }
+  }

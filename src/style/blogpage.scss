@@ -1,0 +1,105 @@
+.blogpage-wrapper {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  height: 100vh; 
+  overflow: auto; 
+  background-attachment: fixed;
+  background-image: url('../../src/images/nubes.jpg');
+  background-size: cover;
+
+  .filter-links {
+      display: flex;
+      justify-content: center;
+
+      .btn {
+          flex: 1; 
+          max-width: 200px; 
+          margin: 0 5px; 
+          padding: 10px 15px;
+          font-size: 1em;
+          background-color: $verdeoscuro; 
+          color: $blanco; 
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+          font-family: 'Manrope', sans-serif;
+
+          &:hover {
+              background-color: darken($verdeoscuro, 10%);
+              font-size: 1.1em;
+              font-weight: bold; 
+          }
+      }
+  }
+
+  .blog-entries-wrapper {
+      display: block;
+      text-align: center;
+
+          div {
+          max-width: 700px;
+          margin: 50px auto;
+          padding: 30px;
+          border: 1px solid #ccc;
+          border-radius: 10px; 
+          text-align: left;
+          background-color: $azulito;
+          padding-left: 10%;
+          padding-right: 10%;
+          padding-bottom: 3%;
+          margin-bottom: 100px;
+
+          h2 {
+              margin-bottom: 50px;
+              font-family: 'Amatic SC', cursive;
+              font-size: 4vw;
+              text-align: center;
+              letter-spacing: 2px;
+          }
+
+          p {
+              font-size: 1.1rem;
+              line-height: 1.6;
+              margin-bottom: 10px;
+              color: $negro;
+              padding-bottom: 20px;
+          }
+
+          img {
+              max-width: 100%;
+              height: auto;
+          }
+      }
+  }
+
+  @media (max-width: 768px) {
+      .filter-links {
+          flex-direction: column;
+          align-items: center;
+
+          .btn {
+              flex: none;
+              max-width: none;
+              margin: 10px 0;
+          }
+      }
+
+      .blog-entries-wrapper > div {
+          max-width: 100%;
+          margin: 30px auto;
+          padding: 20px;
+      }
+
+      h2 {
+          font-size: 2.5vw;
+      }
+
+      p {
+          font-size: 1rem;
+      }
+  }
+}

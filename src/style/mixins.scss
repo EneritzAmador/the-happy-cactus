@@ -1,0 +1,9 @@
+@mixin base-btn {
+    background-color: $verdeclaro;
+    cursor: pointer;
+}
+
+@mixin base-btn-medio {
+    background-color: $verdemedio;
+    cursor: pointer;
+}

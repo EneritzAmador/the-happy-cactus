@@ -1,0 +1,60 @@
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+
+  .modal-form-title {
+    font-family: 'Amatic SC', cursive;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-bottom: -10px;
+  }
+
+  .modal-contact-title,
+  .modal-contact-email,
+  .modal-contact-textarea {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
+    font-size: 1em;
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+      font-family: 'Manrope', sans-serif;
+      font-weight: bold;
+    }
+
+    textarea {
+      height: 200px;
+    }
+
+    input:focus,
+    textarea:focus {
+      outline: 2px solid $verdeoscuro;
+    }
+  }
+
+  .modal-contact-button {
+    button {
+      padding: 15px 50px;
+      font-size: 1em;
+      background-color: $verdeclaro;
+      color: $blanco;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.5s;
+
+      &:hover {
+        background-color: $verdeoscuro;
+      }
+    }
+  }
+}

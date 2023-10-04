@@ -1,0 +1,114 @@
+.user-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: $verdemuyclaro;
+  height: 85vh;
+
+  p {
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+  }
+
+  h1 {
+    font-family: "Amatic SC", cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    color: $negro;
+  }
+
+  .user-info {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    letter-spacing: 1.2px;
+    color: $grismedio;
+    text-align: left;
+    margin-top: 20px;
+    margin-right: 180px;
+  }
+
+  .user-info strong {
+    color: $negro;
+  }
+
+  .input-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 80%;
+    max-width: 500px;
+
+    input {
+      flex: 1;
+      padding: 10px;
+      margin-right: 5px;
+      width: 100%;
+      border: 1px solid $grismedio;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      @include base-btn-medio;
+      padding: 10px 15px;
+      color: $blanco;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: $verdeoscuro;
+        transform: translateY(-2px);
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      
+    }
+  }
+
+  .delete-button {
+    padding: 15px 30px;
+    background-color: $cuidado;
+    color: $blanco;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 35px;
+
+    &:hover {
+      transform: translateY(-2px);
+      background-color: $oscurocuidado;
+      box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    .input-container {
+      flex-direction: column;
+      align-items: center;
+
+      input {
+        width: 100%;
+        margin-bottom: 10px;
+      }
+
+      button {
+        width: 60%;
+      }
+    }
+
+    .delete-button {
+      margin: 15px 0;
+    }
+  }
+}
