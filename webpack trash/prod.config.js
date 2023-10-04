@@ -33,32 +33,30 @@ module.exports = webpackMerge(webpackCommon, {
     rules: [
       {
         test: /\.s?css$/,
-        use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: [
-            {
-              loader: "css-loader",
-              options: {
-                sourceMap: true,
-                importLoaders: 2
-              }
-            },
-            {
-              loader: "postcss-loader",
-              options: {
-                config: {
-                  path: path.resolve(__dirname, "postcss.config.js")
-                },
-                sourceMap: true
-              }
-            },
-            {
-              loader: "sass-loader",
-              options: {
-                outputStyle: "expanded",
-                sourceMap: true,
-                sourceMapContents: true
-              }
+      use: ExtractTextPlugin.extract({
+        fallback: "style-loader",
+        use: [
+          {
+            loader: "css-loader",
+            options: {
+              sourceMap: true,
+              importLoaders: 2
+            }
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              config: {
+                path: path.resolve(__dirname, "postcss.config.js")
+              },
+              sourceMap: true
+            }
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true
+            }
             }
           ]
         })
