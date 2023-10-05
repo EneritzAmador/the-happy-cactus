@@ -54,7 +54,7 @@ export default class BlogContainer extends Component {
 
   //method that maps over the blogs in the state and returns a JSX that shows the title, content and an image if it exists.
   blogEntries() {
-    return this.state.data.map((item) => {
+    return this.state.data.slice().reverse().map((item) => {
       return (
         <div key={item.id}>
           <h2>{item.title}</h2>
