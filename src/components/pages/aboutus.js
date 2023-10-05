@@ -38,7 +38,7 @@ export default class AboutUs extends Component {
       currentSlide: (prevState.currentSlide - 1 + prevState.images.length) % prevState.images.length
     }));
     this.stopInterval();
-    this.startInterval(); // Reinicia el intervalo después de cambiar la imagen manualmente
+    this.startInterval(); 
   };
 
   nextSlide = () => {

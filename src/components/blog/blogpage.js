@@ -59,7 +59,7 @@ export default class BlogContainer extends Component {
         <div key={item.id}>
           <h2>{item.title}</h2>
           <p>{item.content}</p>
-          {item.image && <img src={item.image} alt={item.title} />} {/* Renderiza la imagen si existe */}
+          {item.image && <img src={item.image} alt={item.title} />} {/* Render the image if it exists */}
         </div>
       );
     });
