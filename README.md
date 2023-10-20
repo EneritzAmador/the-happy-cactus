@@ -2,7 +2,9 @@
 
 ## The Happy Cactus shop Url
 
-https://the-happy-cactus-b75e5e944fb7.herokuapp.com/
+New Url: https://the-happy-cactus.up.railway.app/
+
+https://the-happy-cactus-b75e5e944fb7.herokuapp.com/  (deleted url)
 
 ## Description
 
