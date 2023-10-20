@@ -7,7 +7,7 @@ RUN npm install
 
 COPY . .
 
-RUN apk add --no-cache openssl
+RUN apt-get update && apt-get install -y openssl
 
 RUN npm run build
 
